@@ -2,14 +2,16 @@
 @media (prefers-color-scheme: dark) {
   :root { --bg: #0E1116; --ink: #E8E2D6; --muted: #9A958A; --amber: #FFB547; --tick: #3A4250; }
 }
+/* Nunito, the app's typeface, served from this site (SIL Open Font License, see Nunito-OFL.txt). */
+@font-face { font-family: "Nunito"; src: url("Nunito.ttf") format("truetype"); font-weight: 200 1000; font-display: swap; }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink);
-       font: 17px/1.6 ui-monospace, "SF Mono", Menlo, monospace; }
+       font: 17px/1.6 "Nunito", ui-rounded, system-ui, sans-serif; }
 main { max-width: 640px; margin: 0 auto; padding: 48px 16px 64px; }
-h1 { font-size: 32px; margin: 0 0 4px; }
-h2 { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+h1 { font-size: 34px; font-weight: 800; margin: 0 0 4px; }
+h2 { font-size: 20px; font-weight: 700; color: var(--ink);
      margin: 40px 0 8px; padding-top: 16px; border-top: 1px solid var(--tick); }
-.eyebrow { color: var(--amber); font-weight: 600; letter-spacing: .12em; text-transform: uppercase; font-size: 13px; }
+.eyebrow { color: var(--amber); font-weight: 700; font-size: 15px; }
 a { color: var(--amber); }
 p, li { color: var(--ink); }
 .muted { color: var(--muted); }
