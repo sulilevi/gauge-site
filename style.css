@@ -1,0 +1,16 @@
+:root { --bg: #E9EDF1; --ink: #151A22; --muted: #5B6370; --amber: #9A5200; --tick: #C3CAD3; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0E1116; --ink: #E8E2D6; --muted: #9A958A; --amber: #FFB547; --tick: #3A4250; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+       font: 17px/1.6 ui-monospace, "SF Mono", Menlo, monospace; }
+main { max-width: 640px; margin: 0 auto; padding: 48px 16px 64px; }
+h1 { font-size: 32px; margin: 0 0 4px; }
+h2 { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+     margin: 40px 0 8px; padding-top: 16px; border-top: 1px solid var(--tick); }
+.eyebrow { color: var(--amber); font-weight: 600; letter-spacing: .12em; text-transform: uppercase; font-size: 13px; }
+a { color: var(--amber); }
+p, li { color: var(--ink); }
+.muted { color: var(--muted); }
+nav { margin-top: 48px; font-size: 14px; }
